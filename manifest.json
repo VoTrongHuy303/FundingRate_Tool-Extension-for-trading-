@@ -1,0 +1,22 @@
+{
+"manifest_version": 3,
+"name": "Check_Funding_Rate",
+"description": "Base Level Extension",
+"version": "1.0",
+"action": {
+    "default_popup": "./popup/popup.html",
+    "default_icon": "./icons/dollar-dynamic-premium.png"
+},
+"content_scripts": [
+    {
+    "matches": ["*://*/*"],
+    "js": [
+        "./scripts/jquery.js",
+        "./scripts/content.js"
+    ],
+    "css":[
+        "./popup/popup.css"
+    ]
+    }
+]
+}
