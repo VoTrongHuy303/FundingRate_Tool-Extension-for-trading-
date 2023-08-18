@@ -18,22 +18,22 @@ function create_html(color_Text,item,funding_rate_number){
         if(funding_rate_number * 100 > 1.0){
           check_empty = 0;
             var text =  create_html("positive",item,funding_rate_number)
-            $(".container").append(text);
+            $(".container_popup").append(text);
 
         }else if(funding_rate_number * 100 < -1.0){
           check_empty = 0;
             var text = create_html("negative",item,funding_rate_number)
             
-            $(".container").append(text);
+            $(".container_popup").append(text);
         }
       });
 
       $(".proccess").remove();
       if(check_empty == 1){
         var txt1 = `<p >Not today !</p>`;
-        $(".container").append(txt1);
+        $(".container_popup").append(txt1);
       }
-      $(".container").append("<h2>DONE !</h2>");
+      $(".container_popup").append("<h2>DONE !</h2>");
       console.warn("Done !");
     },
     error: function (error) {
