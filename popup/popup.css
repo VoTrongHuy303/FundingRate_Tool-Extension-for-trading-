@@ -56,3 +56,9 @@ box-shadow:  5px 5px 10px #c3c3c3,
 .proccess{
     margin: 1rem;
 }
+.hour{
+    margin-left: 0.5rem;
+    color: orangered;
+    /* font-size: 1.2em; */
+    
+}
