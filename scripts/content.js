@@ -4,7 +4,7 @@ console.log("Please wait ! =))");
 $(document).ready(function () {
  var check_empty = 1;
 function create_html(color_Text,item,funding_rate_number){
-   return txt1 = `<h4 class="${color_Text}" > <span class="circle"></span>${item.symbol} : ${(funding_rate_number * 100).toFixed(3)}%</h4>`;
+   return txt1 = `<h4 class="${color_Text}" > <span class="circle"></span>${item.symbol} : ${(funding_rate_number * 100).toFixed(3)}%  <span class='hour'>${item.collectCycle} hour</span> </h4>`;
 }
   $.ajax({
     url: "https://futures.mexc.com/api/v1/contract/funding_rate/",
